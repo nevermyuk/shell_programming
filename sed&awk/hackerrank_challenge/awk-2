@@ -1,0 +1,8 @@
+#https://www.hackerrank.com/challenges/awk-2/problem
+{
+total = $2+$3+$4;
+avg=total/3;
+if (avg >=50) grade="Pass";
+else  grade="Fail";
+print $1,":",grade;
+}

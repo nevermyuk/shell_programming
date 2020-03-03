@@ -56,3 +56,20 @@ awk -F, '/MA { print $1}' list - change delimiter to comma(,)
 awk -F, '{print $1; print $2; print $3 }' list - print fields on own line separated by semicolons(;)
 ```
 
+### Awk Ternary
+
+```bash
+awk 'ORS=NR%2?";":"\n"' student-marks
+
+CONCETENATE LINE 1 TO LINE 2 DELIMITED BY SEMICOLON(;)
+
+LINE 1 , SEMI COLON;
+LINE 2 , NEW LINE
+```
+
+### References
+
+[Conditionals](https://www.thegeekstuff.com/2010/02/awk-conditional-statements/)
+
+[Built-in vars](https://www.thegeekstuff.com/2010/01/8-powerful-awk-built-in-variables-fs-ofs-rs-ors-nr-nf-filename-fnr/)
+

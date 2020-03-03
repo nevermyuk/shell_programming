@@ -1,0 +1,3 @@
+#https://www.hackerrank.com/challenges/awk-4/problem
+
+ORS=NR%2?";":"\n"
